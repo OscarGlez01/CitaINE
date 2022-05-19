@@ -1,7 +1,6 @@
 <?php
-
 class Respuesta {
-    public $resultado;
-    public $mensaje;
+     public $resultado;
+     public $mensaje; 
 }
 ?>

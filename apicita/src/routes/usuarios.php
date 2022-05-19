@@ -2,37 +2,32 @@
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
+//$app = new \Slim\App;
 
-// Obtener todas las citas
-$app->get('/api/citas', function(Request $request, Response $response){
-    $sql = "SELECT * FROM cita";
+// Obtener todos los usuarios
+$app->get('/api/usuarios', function(Request $request, Response $response){
+    $sql = "SELECT * FROM usuario";
     try {
         $db = new db();
         $db = $db->connect();
         $stmt = $db->query($sql);
-        $citas = $stmt->fetchAll(PDO::FETCH_OBJ);
+        $usuarios = $stmt->fetchAll(PDO::FETCH_OBJ);
         $db = null;
         return $response->withStatus(200)
         ->withHeader('Content-Type', 'application/json')
-        ->write(json_encode($citas, JSON_UNESCAPED_UNICODE));
+        ->write(json_encode($usuarios, JSON_UNESCAPED_UNICODE));
     } catch(PDOException $ex){
         echo '{"error": {"text": '.$ex->getMessage().'}';
     }
 });
 
 // Guarda un usuario
-$app->post('/api/citas/guardar', function(Request $request, Response $response){
+$app->post('/api/usuarios/guardar', function(Request $request, Response $response){
     
     try {
         $value = json_decode($request->getBody());
-        $folio = $value->folio;
-        $ciudadano = $value->ciudadano;
-        $fecha = $value->fecha;
-        $documento = $value->documento;
-        $comprobante = $value->comprobante;
-        $idModulo = $value->idModulo;
-        $idTramite = $value->idTramite;
-        $estado = $value->estado;
+        $nombre = $value->nombre;
+        $cuenta = $value->cuenta;
 
         $db = new db();
         $db = $db->connect();
@@ -40,11 +35,9 @@ $app->post('/api/citas/guardar', function(Request $request, Response $response){
         include("../src/entities/Respuesta.php");
         $object = new Respuesta();
 
-        $sql = "INSERT INTO cita (folio, ciudadano, fecha, documento, comprobante, idModulo, idTramite, estado) VALUES (:folio, :ciudadano, :fecha, :documento, :comprobante, :idModulo, :idTramite, :estado);";
+        $sql = "INSERT INTO usuario (nombre, cuenta) VALUES (:nombre, :cuenta);";
         $statement = $db->prepare($sql);
-        if($statement->execute([":folio" => $folio, ":ciudadano" => $ciudadano, ":fecha" => $fecha,
-        ":documento" => $documento,  ":comprobante" => $comprobante, ":idModulo" => $idModulo,
-        ":idTramite" => $idTramite])){
+        if($statement->execute([":nombre" => $nombre, ":cuenta" => $cuenta])){
           $object->resultado = true;
           $object->mensaje = "El usuario se guardo correctamente";
 

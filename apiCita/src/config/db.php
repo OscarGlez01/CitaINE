@@ -3,7 +3,7 @@ class db {
     private $dbhost = 'localhost';
     private $dbuser = 'root';
     private $dbpass = '753896412Ab!';
-    private $dbname = 'cangurodb';
+    private $dbname = 'citadb';
 
     public function connect() {
         $mysql_connect_str = "mysql:host=$this->dbhost;dbname=$this->dbname; charset=utf8";
