@@ -3,4 +3,14 @@
     <string name="btn_agendar">Agendar</string>
     <string name="btn_consultar">Consultar</string>
     <string name="title">Sistema de citas INE</string>
+    <string name="formulario_folio">Folio:</string>
+    <string name="formulario_ciudadano">Ciudadano:</string>
+    <string name="formulario_fecha">Fecha:</string>
+    <string name="formulario_documento">Documento de nacionalidad:</string>
+    <string name="formulario_comprobante">Comprobante de domicilio:</string>
+    <string name="formulario_modulo">Modulo:</string>
+    <string name="formulario_tramite">Tramite:</string>
+    <string name="formulario_estado">Estado de cita:</string>
+
+
 </resources>

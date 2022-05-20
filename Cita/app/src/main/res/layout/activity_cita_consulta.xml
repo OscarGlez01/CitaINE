@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CitaConsultaActivity">
+    android:orientation="vertical"
+    android:padding="30dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario_nombre"/>
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario_direccion"/>
+
+    <TextView
+        android:id="@+id/txtDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario_telefono"/>
+
+    <TextView
+        android:id="@+id/txtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario_horario"/>
+
+    <TextView
+        android:id="@+id/txtHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario_descripcion"/>
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario_latitud"/>
+
+    <TextView
+        android:id="@+id/txtLatitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/formulario_longitud"/>
+
+    <TextView
+        android:id="@+id/txtLongitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+
+
+</LinearLayout>
