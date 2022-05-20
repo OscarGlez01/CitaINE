@@ -1,13 +1,14 @@
 package mx.itson.cita.entidades;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class Cita implements Serializable {
 
     int id;
     int folio;
     String ciudadano;
-    String fecha;
+    Date fecha;
     String documento;
     String comprobante;
     int idModulo;
@@ -38,12 +39,10 @@ public class Cita implements Serializable {
         this.ciudadano = ciudadano;
     }
 
-    public String getFecha() {
-        return fecha;
-    }
+    public void setFecha(Date fecha) { this.fecha = fecha; }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public Date getFecha() {
+        return fecha;
     }
 
     public String getDocumento() {
