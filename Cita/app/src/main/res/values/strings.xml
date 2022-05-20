@@ -11,6 +11,7 @@
     <string name="formulario_modulo">Modulo:</string>
     <string name="formulario_tramite">Tramite:</string>
     <string name="formulario_estado">Estado de cita:</string>
+    <string name="cancelar">Cancelar</string>
 
 
 </resources>
