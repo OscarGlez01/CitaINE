@@ -10,6 +10,9 @@ $app = new \Slim\App;
 
 require '../src/routes/usuarios.php';
 require '../src/routes/citas.php';
+require '../src/routes/modulos.php';
+require '../src/routes/tramites.php';
+
 
 
 $app->run();
