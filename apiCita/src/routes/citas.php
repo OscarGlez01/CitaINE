@@ -38,11 +38,25 @@ $app->get('/api/citas', function(Request $request, Response $response){
         $db = new db();
         $db = $db->connect();
         $stmt = $db->query($sql);
-        $citas = $stmt->fetchAll(PDO::FETCH_OBJ);
+        $citas = $stmt->fetchAll();
+        $data = [];
+        foreach($citas as $idCita => $cita){
+            $data["citas"][] = [
+                "id" => $cita["id"],
+                "folio" => $cita["folio"],
+                "fecha" => $cita["fecha"],
+                "ciudadano" => $cita["ciudadano"],
+                "documento" => $cita["documento"],
+                "comprobante" => $cita["comprobante"],
+                "Modulo" => $db->query("SELECT nombre FROM modulo WHERE id =". $cita["idModulo"])->fetch(PDO::FETCH_ASSOC),                
+                "Tramite" => $db->query("SELECT nombre FROM tramite WHERE id =". $cita["idTramite"])->fetch(PDO::FETCH_ASSOC),
+                "estado" => $cita["estado"],
+            ];
+        }
         $db = null;
         return $response->withStatus(200)
         ->withHeader('Content-Type', 'application/json')
-        ->write(json_encode($citas, JSON_UNESCAPED_UNICODE));
+        ->write(json_encode($data, JSON_UNESCAPED_UNICODE));
     } catch(PDOException $ex){
         echo '{"error": {"text": '.$ex->getMessage().'}';
     }
