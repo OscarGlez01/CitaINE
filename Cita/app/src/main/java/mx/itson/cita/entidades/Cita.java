@@ -1,6 +1,8 @@
 package mx.itson.cita.entidades;
 
-public class Cita {
+import java.io.Serializable;
+
+public class Cita implements Serializable {
 
     int id;
     int folio;
