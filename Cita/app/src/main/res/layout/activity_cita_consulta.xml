@@ -8,10 +8,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/formulario_nombre"/>
+        android:text="@string/formulario_folio"/>
 
     <TextView
-        android:id="@+id/txtNombre"
+        android:id="@+id/txtFolio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"/>
@@ -20,10 +20,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/formulario_direccion"/>
+        android:text="@string/formulario_ciudadano"/>
 
     <TextView
-        android:id="@+id/txtDireccion"
+        android:id="@+id/txtCiudadano"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"/>
@@ -32,10 +32,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/formulario_telefono"/>
+        android:text="@string/formulario_fecha"/>
 
     <TextView
-        android:id="@+id/txtTelefono"
+        android:id="@+id/txtFecha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"/>
@@ -43,10 +43,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/formulario_horario"/>
+        android:text="@string/formulario_documento"/>
 
     <TextView
-        android:id="@+id/txtHorario"
+        android:id="@+id/txtDocumento"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"/>
@@ -54,10 +54,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/formulario_descripcion"/>
+        android:text="@string/formulario_comprobante"/>
 
     <TextView
-        android:id="@+id/txtDescripcion"
+        android:id="@+id/txtComprobante"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"/>
@@ -65,10 +65,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/formulario_latitud"/>
+        android:text="@string/formulario_modulo"/>
 
     <TextView
-        android:id="@+id/txtLatitud"
+        android:id="@+id/txtModulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text" />
@@ -76,10 +76,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/formulario_longitud"/>
+        android:text="@string/formulario_estado"/>
 
     <TextView
-        android:id="@+id/txtLongitud"
+        android:id="@+id/txtEstado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text" />
