@@ -16,6 +16,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Folio"/>
+    <EditText
+        android:id="@+id/txtFolio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Ciudadano"/>
     <EditText
         android:id="@+id/txtCiudadano"
@@ -47,16 +57,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Estado"/>
-    <EditText
-        android:id="@+id/txtEstado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="Municipio/Delegación"/>
     <EditText
         android:id="@+id/txtMunicipio"
@@ -67,30 +67,28 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hora"/>
+        android:text="Fecha"/>
     <EditText
         android:id="@+id/txtHora"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"/>
+        android:inputType="datetime"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="
-        ------                  INFORMACIÓN DE TU TRÁMITE                      ------
-
+        ------            INFORMACIÓN DE TU TRÁMITE           ------
 "/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Trámite a realizar"/>
-    <EditText
-        android:id="@+id/txtTramite"
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"/>
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -119,69 +117,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="------                             DATOS PERSONALES                             ------"/>
+        android:text="------                                     MODULO                                           ------"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre"/>
-    <EditText
-        android:id="@+id/txtNombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        tools:ignore="DuplicateIds" />
+        android:text="Modulo"/>
 
-    <TextView
+    <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ApellidoPaterno"/>
-    <EditText
-        android:id="@+id/txtApellidoPaterno"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nombre"/>
-
-    <EditText
-        android:id="@+id/txtApellidoMaterno"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nombre"/>
-    <EditText
-        android:id="@+id/txtTelefono"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nombre"/>
-    <EditText
-        android:id="@+id/txtCorreo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nombre"/>
-    <EditText
-        android:id="@+id/txtPaisResidencia"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"/>
+        />
 
     <Button
         android:id="@+id/btnGuardar"
