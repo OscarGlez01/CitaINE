@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import mx.itson.cita.entidades.Cita;
 
-public class CitaFormActivity extends AppCompatActivity {
+public class CitaFormActivity extends AppCompatActivity implements View.OnClickListener{
 
     Button btn_guardar;
     TextView txtFolio;
@@ -28,6 +29,11 @@ public class CitaFormActivity extends AppCompatActivity {
 
         txtFolio = findViewById(R.id.txtFolio);
         txtFolio.setText(cita.getFolio());
+
+    }
+
+    @Override
+    public void onClick(View view) {
 
     }
 }
