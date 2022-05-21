@@ -57,9 +57,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Municipio/Delegación"/>
+        android:text="Estado"/>
     <EditText
-        android:id="@+id/txtMunicipio"
+        android:id="@+id/txtEstado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"/>
@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:text="Fecha"/>
     <EditText
-        android:id="@+id/txtHora"
+        android:id="@+id/txtFecha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="datetime"/>
@@ -86,33 +86,10 @@
         android:layout_height="wrap_content"
         android:text="Trámite a realizar"/>
     <Spinner
+        android:id="@+id/spnTramite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Documento de nacionalidad"/>
-    <EditText
-        android:id="@+id/txtDocumentoNacionalidad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Comprobante de domicilio"/>
-
-    <EditText
-        android:id="@+id/txtComprobanteDom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text" />
-
-
-
 
     <TextView
         android:layout_width="match_parent"
@@ -125,6 +102,7 @@
         android:text="Modulo"/>
 
     <Spinner
+        android:id="@+id/spnModulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />

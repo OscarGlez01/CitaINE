@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Utils {
 
     public static ApiService getApi(){
-        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.3.2/apicita/public/api/").addConverterFactory(GsonConverterFactory.create()).build();
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.1.94/apicita/public/api/").addConverterFactory(GsonConverterFactory.create()).build();
         return  retrofit.create(ApiService.class);
     }
 }

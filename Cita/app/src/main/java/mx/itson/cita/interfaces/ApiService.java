@@ -32,7 +32,7 @@ public interface ApiService {
             @Field("ciudadano") String ciudadano,
             @Field("fecha") Date fecha,
             @Field("documento") String documento,
-            @Field("comprobante") int comprobante,
+            @Field("comprobante") String comprobante,
             @Field("idModulo") int idModulo,
             @Field("idTramite") int idTramite,
             @Field("estado") String estado
